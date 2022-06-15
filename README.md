@@ -20,7 +20,7 @@ For Figure 1C, D, E, we randomly selected 100.000 pixels over the entire study a
 For Figure 1D, we limit our analysis to pixels WITH snow, which we selected by removing pixels with a probability of summer snow inferior to 0.1. It was done as almost the entire dataset has a probability of 0 using the method of Rumpf et al. (2022).
 For Figure 1E, as the variable 'permanent snow' is a binary variable, we computed the proportion of the 100.000 pixels that is classified as permanent snow and computed the relation with the number of images available per year.
 
-![FIGURE1 - Part1](https://user-images.githubusercontent.com/77186981/173765896-aa1bd809-d3a3-4195-8351-2bd6cb8afb8e.png)
+![FIGURE1_Part1](https://user-images.githubusercontent.com/77186981/173824375-b5cf6dc2-cbf4-44c3-bed4-36a30bf39737.png)
 
 ------------------------------------------------------------ FIGURE 1, F, G ------------------------------------------------------
 
