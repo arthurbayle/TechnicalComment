@@ -7,7 +7,7 @@ This repository includes two files :
 - The R code used to conduct the analysis and produce the figures.
 
 
-------------------------------------------------------------------- FIGURE 1, A,B,C,D,E -------------------------------------------------------------------
+---------------------------------------------------------- FIGURE 1, A,B,C,D,E ---------------------------------------------------------
 
 We downloaded the time series of 'Vegetation productivity', 'Summer snow', and 'Permanent snow' from 1984 to 2021 here : https://zenodo.org/record/6386268
 We reworked the Google Earth Engine script from Rumpf et al. (2022) to simplify the extraction of 'Image count' data from 1984 to 2021. The new code can be found in this repository.
@@ -22,7 +22,7 @@ For Figure 1E, as the variable 'permanent snow' is a binary variable, we compute
 
 ![FIGURE1 - Part1](https://user-images.githubusercontent.com/77186981/173765896-aa1bd809-d3a3-4195-8351-2bd6cb8afb8e.png)
 
-------------------------------------------------------------------- FIGURE 1, F, G -------------------------------------------------------------------
+------------------------------------------------------------ FIGURE 1, F, G ------------------------------------------------------
 
 To estimate the bias highlighted in this technical comment, we downloaded each images of the time series for the Path/Row 195028 only. Our example is thus quantitatively representative of areas where there is no overlapping of two tiles which increases the number of images available. In case of overlapping tiles, the bias is expected to be lower as the bias follows an asymptotic relation.
 
