@@ -20,4 +20,26 @@ For Figure 1C, D, E, we randomly selected 100.000 pixels over the entire study a
 For Figure 1D, we limit our analysis to pixels WITH snow, which we selected by removing pixels with a probability of summer snow inferior to 0.1. It was done as almost the entire dataset has a probability of 0 using the method of Rumpf et al. (2022).
 For Figure 1E, as the variable 'permanent snow' is a binary variable, we computed the proportion of the 100.000 pixels that is classified as permenant snow and computed the relation with the number of images available per year.
 
+![FIGURE1 - Part1](https://user-images.githubusercontent.com/77186981/173765896-aa1bd809-d3a3-4195-8351-2bd6cb8afb8e.png)
+
 ------------------------------------------------------------------- FIGURE 1, F, G -------------------------------------------------------------------
+
+To estimate the bias highlighted in this technical comment, we downloaded each images of the time series for the Path/Row 195028 only. Our example is thus quantitatively representative of areas where there is no overlapping of two tiles which increases the number of images available. In case of overlapping tiles, the bias is expected to be lower as the bias follows an asymptotic relation.
+
+The analysis was done on an area ranging from the Mont-Blanc massif to Zermatt as shown below :
+![image](https://user-images.githubusercontent.com/77186981/173767392-4b08bbcc-7b11-4370-ab05-a98bd3fca591.png)
+
+
+We randomly selected 10.000 pixels from pixels that are vegetated (NDVI 0.75 quantile superior to 0 on the image from 2021-07-29) over this area.
+
+Greening trends are computed using the Theil-sen estimator (package 'mblm') and significance using the Mann-Kendall test (package 'Kendall'). 'DescTools' and 'zoo' packages were also used. Trends were computed only when 12 year of relevant data was available as done in Rumpf et al. (2021).
+
+We first computed the greening trends using all available images (hereafter referred as ALL) as a basis.
+Then we computed the greening trends 50 times by randomly selecting a maximum of 3 images per year (hereafter referred as 3MAX). For example, there is 15 images available in 2021 (8 from Landsat 7 and 7 from Landsat 8). For each iteration, we randomly 3 images only among the 15 available. In 1984, only 2 images were available. So for each iteration, the two same images were selected. So only years with more than 3 images can be considered as randomized.
+
+When considering the average number of clear-sky pixels available per year, our randomization has resulted in 1.8 clear-sky pixels used per year.
+![FIGURE1F](https://user-images.githubusercontent.com/77186981/173769170-2b95230e-a5a3-47a5-a2f2-7ed4ba5ae91b.png)
+
+We calculated the proportion of pixels that experienced significant greening (p-val <0.05 and <0.01) based on the ALL and 3MAX methods. We found large difference in the % of pixels experiencing greening.
+
+![FIGURE1G](https://user-images.githubusercontent.com/77186981/173769846-c4fd59d5-46ec-42c6-8f47-14321fea6842.png)
