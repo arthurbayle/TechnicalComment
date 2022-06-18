@@ -40,6 +40,6 @@ Then we computed the greening trends 50 times by randomly selecting a maximum of
 When considering the average number of clear-sky pixels available per year, our randomization has resulted in 1.8 clear-sky pixels used per year.
 ![FIGURE1F](https://user-images.githubusercontent.com/77186981/173769170-2b95230e-a5a3-47a5-a2f2-7ed4ba5ae91b.png)
 
-We calculated the proportion of pixels that experienced significant greening (p-val <0.05 and <0.01) based on the ALL and 3MAX methods. We found large difference in the % of pixels experiencing greening.
+We calculated the proportion of pixels that experienced significant greening (p-val <0.05 and <0.01) based on the ALL and 3MAX methods. We found large difference in the % of pixels experiencing greening. This analysis is purely preliminary with the sole intention to portray the bias rather than trully estimates the "true" proportion of greening pixels. Indeed, using our method, we did not correct for the bias but simply remove it by degrading our data. See Berner et al. (2020) for methods to correct for the bias.
 
 ![FIGURE1G](https://user-images.githubusercontent.com/77186981/173769846-c4fd59d5-46ec-42c6-8f47-14321fea6842.png)
