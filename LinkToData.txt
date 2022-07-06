@@ -1,0 +1,4 @@
+Google drive to all data used in this technical comment :
+The script TechnicalComment.R can run directly by downloading this repository :
+
+https://drive.google.com/drive/folders/1a-kyA7PithUuntx8fA9fVa_jvH99mPOE?usp=sharing
